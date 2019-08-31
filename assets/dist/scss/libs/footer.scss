@@ -1,0 +1,63 @@
+// Footer
+
+.footer {
+    padding: 52px 0 23px;
+    
+    background: #fff;
+
+    @media screen and (min-width: 1024px) {
+        padding: 25px 0 23px;      
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;    
+            align-items: flex-start; 
+        }
+
+        @media screen and (min-width: 1260px) {
+            justify-content: space-between;    
+        }
+    }
+
+    &__logo {
+        margin-bottom: 18px;
+        @media screen and (min-width: 1024px) {
+            margin-right: 166px;
+        }
+    }
+
+    &__link {
+        margin-bottom: 23px;
+        @media screen and (min-width: 1024px) {
+            padding-top: 11px;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+            color: #2f2c2c;
+        }
+    }
+
+    &__property {
+        margin: 0 auto;
+        width: 267px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 8px;
+            margin: 0;   
+            text-align: right;
+        }
+    }
+
+}

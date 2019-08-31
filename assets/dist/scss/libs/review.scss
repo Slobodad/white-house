@@ -1,0 +1,181 @@
+// Review
+
+.review {
+    padding: 38px 0 65px;
+    background: url('../img/review-bgr.png') no-repeat;
+    background-size: contain;
+    background-position: 0 327px;
+
+    @media screen and (min-width: 768px) {
+        padding: 38px 0 60px;
+        background-position: 0 224px;
+    }
+
+    @media screen and (min-width: 1260px) {
+        padding: 38px 0 123px;
+        position: relative;
+        background: url('../img/review-bgr-desktop.png') no-repeat;
+        background-size: 865px;
+        background-position: 527px 137px;
+      
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 23px;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 768px) {
+            width: 90%;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            position: absolute;
+            top: -19px;
+            left: 92px;         
+        }
+    }
+
+    &__description {
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        color: #494a4c;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 100px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin: 0 auto;
+            margin-bottom: 85px;
+            width: 50%;
+            font-size: 20px;
+        }
+
+    }
+
+    &__sl {
+        margin: 0 auto;
+        margin-bottom: 39px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 46px;
+            width: 100%;
+            
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 46px;
+            width: 100%;
+        }
+    }
+
+    &__slide {
+        margin-right: 17px;
+        position: relative;
+        border: 3px solid #dbc2a5;
+
+        @media screen and (min-width: 1260px) {
+            margin-right: 20px;
+        }
+
+        img {
+            width: 136px;
+
+            @media screen and (min-width: 768px) {
+                width: 172px;
+            }
+
+            @media screen and (min-width: 1260px) {
+                width: 184px;
+            }
+        }
+
+        &:hover .review__slide-hover{
+            visibility: visible;
+            opacity: 1;
+            transition: all .5s ease;
+        }
+    }
+
+    &__slide-hover {
+        width: 141px;
+        height: 197px;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+        background-color: rgba(237, 218, 196, 0.61);
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (min-width: 1260px) {
+            width: 190px;
+            height: 266px;
+        }
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 39px;
+            height: 39px;
+            @media screen and (min-width: 1260px) {
+                width: 39px;
+                height: 39px;
+            }
+        }
+    }
+}
+
+.sliders {
+    display: flex;
+}
+
+.scrollbar {
+    width: 296px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #f0dfcd;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
+}
+
+.handle {
+    width: 48px;
+    height: 7px;
+    border-radius: 4px;
+    background-color: #1f2e74;
+
+    @media screen and (min-width: 768px) {
+        width: 235px;
+    }
+}
+
+.sliders {
+    overflow:  hidden !important;
+}

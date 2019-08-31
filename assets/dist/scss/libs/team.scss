@@ -1,0 +1,267 @@
+// Team
+
+.team {
+    padding: 31px 0 66px;
+    background: #fff;
+
+    @media screen and (min-width: 768px) {
+        padding: 71px 0 17px;
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 190px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 21px;
+            width: 100%;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            width: 63%;
+        }
+    }
+
+    &__description {
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 288px;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 19px;
+        color: #494a4c;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+            margin-bottom: 40px;
+            width: 94%;
+            font-size: 19px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin: 0 auto;
+            margin-bottom: 69px;
+            width: 50%;
+            line-height: 24px;
+        }
+    }
+
+    &__element-box {
+
+        @media screen and (min-width: 768px) {
+            padding-left: 57px;
+            display: flex;
+            justify-content: space-between;
+        }        
+
+        @media screen and (min-width: 1260px) {
+            padding-left: 0;
+        }
+    }
+
+    &__element {
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media screen and (min-width: 1260px) {
+            width: 50%;
+        }
+        &:first-child {
+            margin-bottom: 78px;
+
+            .team__photo {
+
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 22px;
+                }
+
+                @media screen and (min-width: 1260px) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media screen and (min-width: 1260px) {
+                margin-right: 26px;
+            }
+        }
+
+        &:last-child{
+            .team__content {
+
+                .team__photo {
+                    margin-bottom: 22px;
+
+                    @media screen and (min-width: 1260px) {
+                        margin-bottom: 3px;
+                    }
+                }
+
+                .team__caption {
+                    padding-top: 133px;
+
+                    @media screen and (min-width: 1260px) {
+                        margin-right: 85px;
+                        padding-top: 212px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: 36px;
+        padding-top: 73px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__background-a {
+        background: url('../img/team-bgr-a.png') no-repeat;
+        background-size: 295px;
+
+        @media screen and (min-width: 1260px) {
+            background-size: 363px;
+            background-position: 7px 4px;
+        }
+    }
+
+    &__background-n {
+        background: url('../img/team-bgr-n.png') no-repeat;
+        background-size: 295px;
+
+        @media screen and (min-width: 1260px) {
+            background-size: 363px;
+            background-position: 7px 4px;
+        }
+    }
+
+    &__photo {
+        margin-right: 16px;
+        margin-bottom: 15px;
+        padding-top: 2px;
+        width: 54%;
+        img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 40%;
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 0;
+            padding-top: 26px;
+            width: 33%;
+        }
+
+    }
+
+    &__caption {
+        padding-top: 140px;
+        align-self: center;
+        @media screen and (min-width: 1260px) {
+            margin-right: 61px;
+            padding-top: 217px
+        }
+    }
+
+    &__name {
+        margin-bottom: 2px;
+        width: 110px;
+        display: block;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 19.77px;
+        text-transform: uppercase;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1260px) {
+            padding-left: 10px;
+            font-size: 20px;  
+            line-height: normal;  
+        }
+    }
+
+    &__position {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.77px;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1260px) {
+            padding-left: 10px;
+            font-size: 16px;    
+        }
+    }
+
+    &__text {
+        padding-left: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border-left: 2px solid #1f2e74;
+        color: #525354;
+
+        @media screen and (min-width: 1024px) {
+            width: 65%;
+        }
+
+        @media screen and (min-width: 1260px) {
+            width: 30%;
+            align-self: flex-end;  
+        }
+
+        span {
+            &:first-child {
+                display: inline;
+
+                @media screen and (min-width: 1260px) {
+                    display: block;   
+                }
+            }
+
+            &:last-child {
+                display: block;
+
+                @media screen and (min-width: 1260px) {
+                    display: inline;   
+                }
+            }
+            
+        }
+    }
+
+    &__btn {
+        a {
+            padding: 13px 72px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 22px;
+            background-color: #1f2e74;
+            background-image: linear-gradient(to bottom, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+            color: #ffffff;
+
+            @media screen and (min-width: 1260px) {
+                padding: 13px 28px;
+            }
+
+            &:hover {
+                background-color: #1f2e74;
+                background-image: linear-gradient(to top, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+            }
+        }
+    }
+}

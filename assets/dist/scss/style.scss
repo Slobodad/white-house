@@ -1,0 +1,106 @@
+@import "libs/fontello";
+@import "libs/fonts";
+@import "libs/header";
+@import "libs/offer";
+@import "libs/guaranty";
+@import "libs/content-block";
+@import "libs/feedback";
+@import "libs/example";
+@import "libs/review";
+@import "libs/services";
+@import "libs/about";
+@import "libs/cooperation";
+@import "libs/team";
+@import "libs/action";
+@import "libs/contact";
+@import "libs/footer";
+@import "libs/modal";
+@import "libs/slick";
+@import "libs/fancybox";
+@import "libs/mCustomScrollbar";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+ul,ol{
+  margin: 0;
+}
+input {
+  position: relative;
+  z-index: 10;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+ul li,ol li{
+  margin: 0;
+}
+
+a,button {
+  cursor: pointer !important;
+}
+
+.clearfix{
+  &:after { 
+    content: " ";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+  }
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+  
+@media screen and (min-width: 1160px) {
+
+  .container{
+    padding: 0;
+    width: 1140px;
+  }
+
+}
+
+@media screen and (min-width: 1260px) {
+
+  .container{
+    padding: 0;
+    width: 1240px;
+  }
+
+}

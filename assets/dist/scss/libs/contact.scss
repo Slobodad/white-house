@@ -1,0 +1,213 @@
+// Contact
+
+.contact {
+    padding-bottom: 204px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+    }
+
+    &__container {
+        position: relative;
+    }
+    &__map {
+        width: 100%;
+        height: 588px;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            height: 707px;
+        }
+    }
+
+    &__block-box {
+        margin: 0 auto;
+        width: 272px;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width: 768px) {
+            top: -370px;
+            left: 254px;
+        }
+        @media screen and (min-width: 1024px) {
+            left: 378px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            width: 353px;
+            top: -380px;
+            left: 1031px;
+        }
+
+        &::before {
+            width: 297px;
+            height: 362px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -12px;
+            z-index: -1;
+            border-radius: 10px;
+            background-color: #ffffff;
+            opacity: 0.9;
+
+            @media screen and (min-width: 1260px) {
+                width: 385px;
+                height: 454px;
+            }
+        }
+
+        &::after {
+            width: 320px;
+            height: 362px;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -24px;
+            z-index: -2;
+            box-shadow: 0 3px 13px rgba(163, 154, 144, 0.42);
+            border-radius: 10px;
+            background-color: #ffffff;
+            opacity: 0.47;
+
+            @media screen and (min-width: 1260px) {
+                width: 415px;
+                height: 454px;
+
+            }
+        }
+
+    }
+
+    &__block {
+        margin: 0 auto;
+        padding: 30px 0;
+        width: 272px;
+
+        border-radius: 10px;
+        background: #f5e8da;
+
+        @media screen and (min-width: 1260px) {
+            padding: 26px 0;
+            width: 353px;
+            height: 454px;
+        }
+    }
+    
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 29px;
+        width: 207px;
+        height: 65px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 61px;
+            width: auto;
+            font-size: 24px;
+        }
+
+        span {
+            @media screen and (min-width: 1260px) {
+                display: block;
+            }
+
+            &:last-child {
+                display: block;
+            }
+        }
+    }
+
+    &__number {
+        margin-bottom: 23px;
+        // text-align: center;
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 25px;
+        }
+
+        i {
+            margin-right: 8px;
+            color: #cab7a0;
+            @media screen and (min-width: 1260px) {
+                font-size: 16px;
+            }
+        }
+        a {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #2f2c2c;
+
+            @media screen and (min-width: 1260px) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__working {
+        margin-bottom: 46px;
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 58px;
+        }
+        span {
+            margin: 0 auto;
+            width: 171px;
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            color: #2f2c2c;
+        }
+       
+    }
+
+    &__btn {
+        margin-bottom: 36px;
+        text-align: center;
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 74px;
+            padding-left: 0;
+        }
+        a {
+            padding: 14px 37px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 22px;
+            background-color: #1f2e74;
+            background-image: linear-gradient(to bottom, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+            color: #ffffff;
+
+            &:hover {
+                background-color: #1f2e74;
+                background-image: linear-gradient(to top, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+            }
+        }
+    }
+
+    &__address {
+        padding-left: 20px;
+
+        @media screen and (min-width: 1260px) {
+            padding-left: 48px;
+        }
+
+        i {
+            color: #cab7a0;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #2f2c2c;
+        }
+    }
+
+}

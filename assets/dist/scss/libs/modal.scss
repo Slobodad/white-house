@@ -1,0 +1,366 @@
+// Modal
+
+.modal-callback__box {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -13px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.modal-callback__box--active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.modal-callback {
+    width: 296px;
+    padding: 50px 0 45px;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 32px rgba(179, 177, 175, 0.49);
+    background: #fff;
+
+    @media screen and (min-width: 768px) {
+        left: 55%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 613px;
+        top: 40%;
+        left: 50%;
+    }
+
+    @media screen and (min-width: 1260px) {
+        top: 50%;
+        left: 50%;
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 191px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 18px;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1024px) {
+            width: auto;
+            font-size: 20px;
+        }
+
+        span {
+            @media screen and (min-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+
+    &__form {
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding-left: 23px;
+            width: 237px;
+            height: 50px;
+            box-shadow: 0px 4px 3px 0px rgba(215, 202, 189, 7.51) inset;
+            border-radius: 25px;
+            border: none;
+            background-color: #F5F1EE;
+
+            @media screen and (min-width: 1024px) {
+                margin-right: 14px;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+                color: #a69f97;
+            }
+        }
+
+        button {
+            width: 237px;
+            height: 49px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 25px;
+            color: #ffffff;
+            background-color: #1f2e74;
+            background-image: linear-gradient(to bottom, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+        }
+    }
+
+    // &__field {
+    //     margin: 0 auto;
+    //     width: 80%;
+
+    //     @media screen and (min-width: 1024px) {
+    //         width: 39%;
+    //         margin-right: 14px;
+    //         padding-left: 62px;
+    //     }
+    // }
+
+    &__ps {
+        padding-left: 40px;
+        width: 210px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #a69f97;
+
+        @media screen and (min-width: 1024px) {
+            width: 56%;
+            padding-left: 62px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #a69f97;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: transparent;
+    }
+}
+
+.modal-thanks__box {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -13px;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.modal-thanks__box--active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.modal-thanks {
+    width: 296px;
+    padding: 67px 46px 61px 49px;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 32px rgba(179, 177, 175, 0.7);
+    border-radius: 10px;
+    background: #fff;
+
+    @media screen and (min-width: 768px) {
+        left: 55%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 383px;
+        top: 40%;
+        left: 50%;
+        border-radius: 31px;
+    }
+
+    @media screen and (min-width: 1260px) {
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: #2f2c2c;
+
+        span {
+            display: block;
+        }
+
+        @media screen and (min-width: 1260px) {
+            font-size: 20px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: transparent;
+    }
+}
+
+.modal-security__box {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.modal-security__box--active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.modal-security {
+    padding: 49px 10px 24px 11px;
+    width: 297px;
+    height: 496px;
+    position: relative;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 32px rgba(179, 177, 175, 0.7);
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    
+    @media screen and (min-width: 1024px) {
+        width: 400px;
+        // height: 600px;
+    }
+
+    @media screen and (min-width: 1260px) {
+        width: 866px;
+        height: 90vh;
+    }
+
+    &__text {
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        overflow: hidden;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 1024px) {
+            height: 100%;
+        }
+        
+        h3 {
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            
+            &:first-child {
+                text-align: center;
+            }
+        }
+
+        h5 {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: transparent;
+    }
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    padding-top: 50px !important;
+    width: 4px !important;
+    height: 356px !important;
+    border-radius: 2px !important;
+    background-color: #f0dfcd !important;
+
+    @media screen and (min-width: 1024px) {
+        height: 510px !important;
+    }
+
+    @media screen and (min-width: 1260px) {
+        height: 754px !important;
+    }
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px !important;
+    height: 94px !important;
+    border-radius: 2px !important;
+    background-color: #1f2e74 !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    top: 80px !important;
+}
+
+// Hint
+
+.my-hint {
+    padding: 11px 10px;
+    width: 190px;
+    height: 53px;
+    box-shadow: 0 3px 7px rgba(163, 154, 144, 0.41);
+    background-color: #ffffff;
+
+    &__address {
+        i {
+            width: 8px;
+            height: 10px;
+            background-color: #e2cfb9;
+        }
+
+        span {
+            font-size: 13px;
+            font-weight: 400;
+            color: #2f2c2c;
+        }
+    }
+
+    &__phone {
+        a {
+            font-size: 13px;
+            font-weight: 400;
+            color: #2f2c2c;
+        }
+        i {
+            width: 8px;
+            height: 10px;
+            background-color: #e2cfb9;
+        }
+    }
+}
+

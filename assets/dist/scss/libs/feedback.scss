@@ -1,0 +1,427 @@
+// Feedback
+
+.feedback {
+    padding: 38px 0 45px;
+    background: #f5e8da;
+
+    @media screen and (min-width: 1260px) {
+        padding: 72px 0 130px;
+        position: relative;
+        z-index: 10;
+        background: url('../img/feedback-bgr-desktop.jpg') no-repeat;
+        background-size: 1920px;
+        background-position: center;
+    }
+
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 259px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        color: #2f2c2c;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            font-size: 26px;
+            line-height: 40px;
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin-bottom: 20px;
+            width: 60%;
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 43px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 19px;
+        color: #494a4c;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+            margin-bottom: 40px;
+            width: 94%;
+        }
+
+        @media screen and (min-width: 1260px) {
+            margin: 0 auto;
+            margin-bottom: 85px;
+            width: 59%;
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+
+    &__form-box {
+        text-align: center;
+    }
+
+    &__form {
+        position: relative;
+        
+        @media screen and (min-width: 1260px) {
+            margin: 0 auto;
+            width: 75%;
+        }
+        input {
+            margin-bottom: 15px;
+            padding-left: 23px;
+            width: 296px;
+            height: 50px;
+            position: relative;
+            box-shadow: 0px 4px 3px 0px rgba(215, 202, 189, 7.51) inset;
+            border-radius: 25px;
+            border: none;
+            background-color: #ffffff;
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+                color: #a69f97;
+            }
+
+            @media screen and (min-width: 768px) {
+                margin: 0 auto;
+                margin-bottom: 15px;
+                width: 80%;
+                display: block;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 100%;
+            }
+        }
+
+        textarea {
+            margin-bottom: 24px;
+            padding: 25px 20px;
+            width: 297px;
+            height: 278px;
+            box-shadow: inset 0 4px 3px rgba(215, 202, 189, 0.71);
+            border-radius: 20px;
+            border: none;
+            background-color: #ffffff;
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+                color: #a69f97;
+            }
+        }
+
+        p {
+            margin-bottom: 23px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #a69f97;
+
+            @media screen and (min-width: 768px) {
+                margin: 0 auto;
+                margin-bottom: 15px;
+                width: 80%;
+                display: block;
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin: 0;
+                margin-bottom: 15px;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        span {
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+            color: #a69f97;
+
+            @media screen and (min-width: 768px) {
+                display: inline;
+            }
+        }
+
+        button {
+            width: 295px;
+            height: 49px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 25px;
+            color: #ffffff;
+            background-color: #1f2e74;
+            background-image: linear-gradient(to bottom, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+        
+            &:hover {
+                background-color: #1f2e74;
+                background-image: linear-gradient(to top, rgba(18, 67, 187, 0) 33%, #1243bb 100%);
+            }
+
+            @media screen and (min-width: 768px) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__form-row-1 {
+        @media screen and (min-width: 1024px) {
+            margin: 0 auto;
+            max-width: 1005px;
+            display: flex;
+        }
+        @media screen and (min-width: 1260px) {
+            width: auto;
+        }
+        
+    }
+
+    &__form-address {
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 33%;
+            margin-right: 15px;
+        }
+        @media screen and (min-width: 1260px) {
+            margin-right: 22px;
+        }
+    }
+
+    &__form-yardage {
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 33%;
+            margin-right: 15px;
+        }
+        @media screen and (min-width: 1260px) {
+            margin-right: 22px;
+        }
+    }
+
+    &__form-rooms {
+        @media screen and (min-width: 1024px) {
+            width: 33%;
+            margin-right: 0;
+        }
+    }
+
+    &__form-row-2 {
+        position: relative;
+
+        @media screen and (min-width: 1024px) {
+            margin: 0 auto;
+            max-width: 1005px;
+            display: flex;
+        }
+        @media screen and (min-width: 1260px) {
+            width: auto;
+        }
+        
+    }
+
+    &__form-name {
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 325px;
+            margin-right: 0;
+            order: 1;
+        }
+    }
+
+    &__form-phone {
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 317px;
+            position: absolute;
+            top: 71px;
+            right: 0;
+        }
+        @media screen and (min-width: 1260px) {
+            width: 300px;
+            position: absolute;
+            top: 71px;
+            right: 0;
+        }
+    }
+
+    &__form-message {
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 680px;
+            margin-right: 15px;
+            order: 0;
+        }
+        @media screen and (min-width: 1260px) {
+            width: 614px;
+        }
+
+        textarea {
+            @media screen and (min-width: 768px) {
+                margin: 0 auto;
+                margin-bottom: 15px;
+                width: 80%;
+                display: block;
+            }
+            @media screen and (min-width: 1024px) {
+                width: 665px;
+                height: 204px;
+                margin-right: 0;
+            }
+            @media screen and (min-width: 1260px) {
+                margin-right: 22px;
+                width: 614px;
+                height: 204px;
+            }
+        }
+    }
+
+    &__form-btn {
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 313px;
+            position: absolute;
+            top: 155px;
+            left: 690px;
+        }
+        @media screen and (min-width: 1260px) {
+            width: 295px;
+            position: absolute;
+            top: 155px;
+            left:632px;
+        }
+    }
+
+    &__form-ps {
+        text-align: left;
+        @media screen and (min-width: 768px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 615px;
+            position: absolute;
+            top: 222px;
+            left: 8px;
+        }
+        @media screen and (min-width: 1260px) {
+            width: 615px;
+            position: absolute;
+            top: 235px;
+            left: 0;
+        }
+
+        a {
+            display: block;
+            text-decoration: underline;
+            color: #a69f97;
+
+            @media screen and (min-width: 768px) {
+                display: inline;
+            }
+        }
+    }
+
+}
+
+.required-field {
+    position: relative;
+}
+
+.required {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    border-radius: 25px;
+    border: 2px solid red;
+
+    @media screen and (min-width: 360px) {
+        width: 88%;
+        left: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 80.5%;
+        left: 73px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 101.5%;
+        left: -2px;
+    }    
+}
+
+.required-modal {
+    width: 81.5%;
+    height: 56px;
+    position: absolute;
+    top: -3px;
+    left: 27px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    border-radius: 25px;
+    border: 2px solid red;
+
+    @media screen and (min-width: 1024px) {
+        width: 96.5%;
+        top: -3px;
+        left: -2px;
+    }
+}
+
+.required-action {
+    width: 101%;
+    height: 56px;
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    border-radius: 25px;
+    border: 2px solid red;
+
+    @media screen and (min-width: 1024px) {
+        width: 252%;
+        height: 54px;
+        top: -2px;
+        left: -2px;
+    }
+
+    @media screen and (min-width: 1260px) {
+        width: 101%;
+        height: 56px;
+        top: -3px;
+        left: -2px;
+    }
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+}
